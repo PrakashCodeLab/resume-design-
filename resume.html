@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>prakash-resume</title>
+     
+      <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+      <style>
+         
+  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Montserrat:ital,wght@0,400;0,500;0,600;1,300;1,400;1,600&family=Open+Sans:wght@400;500;600;700;800&family=Poppins:wght@300;400;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+
+/* General Styles */
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+body {
+	
+	display: grid;
+	place-items: center;
+    min-height: 100vh;
+}
+
+
+.container {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	margin: 0 auto;
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+	max-width: 1000px;
+
+}
+
+/* Container One Styles */
+.container__one {
+	width: 65%;
+	padding: 0.5rem;
+	background-color: #d6eaf8;
+	border-top-right-radius: 0.5rem;
+	border-bottom-right-radius: 0.5rem;
+}
+
+
+.container__head {
+	background-color: #c4e1f4;
+	color: #333333;
+	padding: 1.5rem;
+	
+
+}
+
+.container__head h1 {
+	font-size: 2.5em;
+	margin-bottom: 0.5em;
+	color: #000000;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-family: 'Lato', sans-serif;
+}
+
+.container__head p {
+	font-size: 1.3rem;
+	margin-bottom: 1em;
+	font-weight: 700;
+	color: #000000;
+	padding-left: 0.5rem;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+font-family: 'Open Sans', sans-serif;
+}
+
+.container__summary {
+	margin-top: 1.8rem;
+}
+
+.container__summary h2 {
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 1rem;
+	background-color: #0051a8;
+	color: #CCCCCC;
+	display: inline;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	padding: 0.6rem;
+	border-radius: 0.3rem;
+	margin-left: 1rem;
+	margin-bottom: 1.5rem;
+font-family: 'Lato', sans-serif;
+}
+
+.container__summary ul {
+	list-style: none;
+	margin-top: 1.5rem;
+	margin-left: 5rem;
+
+}
+
+.container__summary li {
+	margin-bottom: 0.5rem;
+	line-height: 1.5rem;
+	font-family: 'Montserrat', sans-serif;
+
+
+}
+
+.container__summary li:before {
+	content: "•";
+	color: #000000;
+	display: inline-block;
+	width: 1rem;
+	margin-left: -1em;
+}
+
+.container__summary li:last-child {
+	margin-bottom: 0;
+}
+
+
+.container__experience,
+.container__project,
+.container__education,
+.container__interest {
+	margin-top: 1.5rem;
+	padding-left: 1rem;
+
+}
+
+.container__education {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+
+.container__education h2,
+.container__interest h2 {
+
+	font-size: 1.5em;
+	border-radius: 0.3rem;
+	background-color: #E6E6FA;
+	padding: 0.6rem;
+	display: inline;
+ font-family: 'Lato', sans-serif;
+	color: #333333;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.container__experience h3 {
+
+	color: #d3d3d3;
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+.container__education h2 {
+	margin-bottom: 0.7rem;
+	background-color: #0051a8;
+	color: #CCCCCC;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+
+.container__project h3 {
+	margin-top: 0.6em;
+	color: #073763;
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.container__project h2 {
+	background-color: #0051a8;
+	color: #CCCCCC;
+	font-size: 1.5em;
+	border-radius: 0.3rem;
+	padding: 0.6rem;
+	display: inline;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+font-family: 'Lato', sans-serif;
+}
+
+
+.container__education ul {
+	margin-top: 1.4rem;
+	padding-left: 0.5rem;
+}
+
+
+.container__project li,
+.container__education li {
+	list-style-type: none;
+	font-size: 1.1em;
+	line-height: 1.5;
+	margin-bottom: 0.5em;
+
+}
+
+.text-break {
+	text-align: justify;
+	letter-spacing: 0;
+	word-spacing: 0;
+	line-height: 1rem;
+
+}
+
+
+.container__education h3 {
+	text-transform: uppercase;
+font-family: 'Open Sans', sans-serif;
+}
+
+
+.container__education p,
+.container__project p {
+	margin-top: 0.5em;
+	font-size: 1em;
+	color: #000000;
+font-family: Georgia, serif;
+}
+
+#text__project {
+	margin-top: 1.5rem;
+	text-indent: 60px;
+}
+
+.container__experience p {
+	line-height: 1.7rem;
+	text-align: justify;
+	text-indent: 40px;
+	color: #ffffff;
+	padding: 0.5rem;
+	font-family: Georgia, serif;
+
+}
+
+.container__project p {
+	line-height: 1.7rem;
+ text-indent: 40px;
+font-family: Georgia, serif;
+}
+
+
+.container__experience {
+	margin-bottom: 1rem;
+	margin-top: 2rem;
+
+}
+
+.container__experience h2 {
+	font-size: 28px;
+	font-weight: bold;
+	margin-bottom: 1rem;
+	font-size: 1.5em;
+	border-radius: 0.3rem;
+	background-color: #E6E6FA;
+	padding: 0.6rem;
+	display: inline;
+font-family: 'Lato', sans-serif;
+	color: #333333;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.container__experience ul {
+	list-style-type: none;
+	margin-top: 1rem;
+}
+
+.container__experience li {
+	margin-bottom: 1rem;
+	margin-top: 0.8rem;
+	
+}
+
+.container__experience li h3 {
+	font-size: 22px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	padding-left: 0.5rem;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.container__experience li p {
+	font-size: 18px;
+	line-height: 1.5;
+	margin: 0;
+	padding: 0.3rem;
+	color: #000000;
+}
+
+
+/* Container Two Styles */
+.container__two {
+	width: 35%;
+ padding: 0.5rem;
+	background-color: #0074e4;
+ border-top-left-radius: 0.5rem;
+	border-bottom-left-radius: 0.5rem;
+}
+
+
+.container__contact {
+	margin-top: 2em;
+	padding-left: 1em;
+	border-bottom: 2px solid black;
+}
+
+.container__contact h2 {
+ font-family: 'Lato', sans-serif;
+	font-size: 1.5em;
+	margin-bottom: 0.5em;
+	border-radius: 0.3rem;
+	background-color: #E6E6FA;
+	padding: 0.8rem;
+	display: inline;
+	color: #333333;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.container__contact ul {
+	list-style-type: none;
+	font-size: 1.1em;
+	line-height: 1.5;
+	margin-top: 1.8rem;
+	margin-bottom: 1em;
+	padding-left: 1em;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.container__contact i {
+	margin-right: 0.5em;
+	color: #c2ddf0;
+	font-size: 1.5em;
+	vertical-align: middle;
+}
+
+.container__contact a {
+	color: #ffffff;
+	text-decoration: none;
+	padding-left: 0.5rem;
+	font-family: 'Open Sans', sans-serif;
+
+}
+
+.address__span {
+	padding-left: 3rem;
+}
+
+.container__skills {
+	margin-top: 1.9rem;
+	padding-left: 1em;
+
+}
+
+.container__skills h2 {
+font-family: 'Lato', sans-serif;
+	font-size: 1.5em;
+	margin-bottom: 0.5em;
+	border-radius: 0.3rem;
+	background-color: #E6E6FA;
+	color: #333333;
+	padding: 0.8rem;
+	display: inline;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+
+
+}
+
+.container__skills ul,
+.container__interest ul {
+	list-style-type: none;
+	font-size: 1.1em;
+	line-height: 1.5;
+	padding-left: 1em;
+
+}
+
+.container__interest ul {
+	list-style-type: disc;
+	padding-top: 1rem;
+}
+
+.container__interest ul {
+	margin-top: 0.5rem;
+}
+
+.container__skills h3 {
+	color: #d3d3d3;
+	font-size: 1.2em;
+	margin-bottom: 0.5em;
+margin-top: 1rem;
+font-family: 'Open Sans', sans-serif;
+text-transform:uppercase;
+}
+
+
+
+.container__skills li {
+	margin-bottom: 0.5em;
+	font-size: 18px;
+	font-weight: 600;
+	color: #ffffff;
+	font-family: 'Lato', sans-serif;
+	text-transform:capitalize;
+	letter-spacing:0.5px;
+}
+
+.container__interest li {
+	margin-bottom: 0.5em;
+	margin-top: 1rem;
+	font-size: 18px;
+	font-weight: 600;
+	color: #ffffff;
+}
+
+
+.skills li {
+	list-style-type: disc;
+}
+
+
+.container__interest {
+	margin-top: 2rem;
+}
+
+          
+          
+          
+</style>
+ </head>
+   <body>
+      <div class="container">
+         <div class="container__one">
+            <div class="container__head">
+               <h1>Prakash .M</h1>
+               <p>web developer</p>
+            </div>
+            <div class="container__summary">
+               <h2>Summary</h2>
+               <ul>
+                  <li>Highly motivated self-taught web developer with proficiency in HTML, CSS, and JavaScript.</li>
+                  <li>Familiarity with React and Bootstrap, with a dedication to expanding knowledge and skills to become a full-stack developer.</li>
+                  <li>Detail-oriented and committed to delivering high-quality work while maintaining a strong work ethic.</li>
+                  <li>Eager to learn and stay up-to-date with the latest trends and technologies in the web development industry.</li>
+               </ul>
+            </div>
+            <section class="container__project">
+               <h2>Projects</h2>
+               <p id="text__project">To demonstrate my skills, I have completed several projects including a movie website with  API integration, landing pages for bakeries, portfolio pages, restaurant websites, and simple web applications like a to-do list app and a form validation tool. All of these projects were developed with a strong focus on user experience and responsive design</p>
+               <ul>
+                  <li>
+                     <h3>Movie Website</h3>
+                     <p>Created a responsive movie website using a movie API.</p>
+                  </li>
+                  <li>
+                     <h3>Landing Pages</h3>
+                     <p>Developed company landing pages using HTML, CSS, and JavaScript.</p>
+                  </li>
+                  <li>
+                     <h3>Portfolio Page</h3>
+                     <p>Designed and developed a personal portfolio page with animations and effects.</p>
+                  </li>
+                  <li>
+                 <h3>Restaurant Website</h3>
+                     <p>Built a simple hotels website with search and filter functionality using local storage and form validation.</p>
+                  </li>
+                  <li>
+                     <h3>To-Do App</h3>
+                     <p>Developed a fully-functional to-do application with user-friendly interface and task management features.</p>
+                  </li>
+               </ul>
+            </section>
+            <section class="container__education">
+               <h2>Education</h2>
+               <ul>
+                  <li>
+                     <h3>B.E - Mechanical Engineering</h3>
+                     <p>AR Engineering College, Villupuram</p>
+                     <p>August 2013 - May 2017</p>
+                  </li>
+               </ul>
+            </section>
+         </div>
+         <div class="container__two">
+            <section class="container__contact">
+               <h2>Contact</h2>
+               <ul>
+                  <li>
+                     <i class="bi bi-envelope"></i>
+                     <a href="mailto:youremail@example.com">prakashtechweb@gmail.com</a> 
+                  </li>
+                  <li>
+                     <i class="bi bi-phone"></i>
+                     <a href="tel:+91  6381297160">+91 6381297160</a>
+                  </li>
+                  <li>
+                     <i class="bi bi-geo-alt"></i>
+                     <a href="https://maps.google.com/?q=123+Main+Street">1/71 , Arasamaram street , <span class="address__span">Azhiyur, Villupuram district</span><br><span class="address__span" >pin-code : 605 102</span></a>
+                  </li>
+               </ul>
+            </section>
+            <section class="container__skills">
+               <h2>Skills</h2>
+               <ul>
+                  <li>
+                     <h3 class="web__skills">Web Technologies</h3>
+                     <ul class="skills">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                        <li>Bootstrap</li>
+                     </ul>
+                  </li>
+                  <li>
+                     <h3>Version Control</h3>
+                     <ul class="skills">
+                        <li>Git</li>
+                        <li>GitHub</li>
+                     </ul>
+                  </li>
+                  <li>
+                     <h3>JavaScript Frameworks</h3>
+                     <ul class="skills">
+                        <li>React</li>
+                     </ul>
+                  </li>
+               </ul>
+            </section>
+            <section class="container__experience">
+               <h2>Experience</h2>
+               <ul>
+                  <li>
+                     <h3>web designer - 2022</h3>
+                     <p>In the past 6 months, I have self-taught web development and gained hands-on experience. I am skilled in HTML, CSS, and JavaScript, and have basic knowledge of React, Bootstrap, and Git. My passion for coding and self-motivation drove me to acquire these skills, and I am eager to apply them in a professional setting</p>
+                  </li>
+                  <li>
+                     <h3>Machine Operator <br>Appasamy Associate -2020</h3>
+                     <p class="text-break">Proficient in operating CNC machines to manufacture products to specifications, with a focus on quality control and adherence to standards.</p>
+                  </li>
+               </ul>
+            </section>
+            
+         </div>
+      </div>
+   </body>
+</html>
